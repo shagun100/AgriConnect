@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-dark {
+  background-color: rgb(90, 15, 15) !important;
+  margin-bottom: -17px;
+
+}
+
+/* Change text color to white */
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+/* Change button color to white */
+.btn-get-started {
+  color: white !important;
+  background-color: black !important;
+  border-color: white !important;
+}
+
+.navbar {
+    background-color: #81c381; /* Green */
+  }
+  .navbar-brand img {
+    width: 50px; /* Adjust logo width */
+    
+  }
+  .navbar .nav-link {
+    color: #fff;
+    margin-right: 20px;
+  }
+  .navbar .nav-link:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar .line-divider {
+    border-right: 2px solid #fff;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .navbar .btn-get-started {
+    background-color: #000; /* Black */
+    color: #fff;
+  }
+  .navbar-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .container-introduction {
+    padding: 50px 0;
+    background-color: #d1ddd1; /* Light grey */
+  }
+  .intro-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .intro-text h2 {
+    font-size: 36px;
+    color: #333; /* Dark grey */
+    margin-bottom: 20px;
+  }
+  .intro-text p {
+    font-size: 18px;
+    color: #666; /* Medium grey */
+  }
+  .intro-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-images img {
+    width: 350px;
+    margin: 0 20px;
+    animation: fadeInUp 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
+  }
+  .intro-images .img2{
+    height: 420px;
+  }
+  .intro-images .img3{
+    height: 420px;
+  }
+  .intro-images .img1{
+    height: 420px;
+  }
+  .intro-images img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Adjust the opacity and colors as needed */
+  }
+
+  #map{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  footer {
+    background-color: #693e2f;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    height: 50px; /* Adjust height as needed */
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links a {
+    color: #fefefe;
+    text-decoration: none;
+    margin: 0 10px;
+    
+  }
+  
+  .footer-links a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f9f6f6;
+  }
+  #pricing {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .pricing-block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .veggie {
+    overflow: hidden;
+    width: calc(33.33% - 60px);
+    background-color: #a1bda9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    .veggie-img{
+      max-height: 124px;
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .veggie {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .veggie {
+      width: calc(100% - 40px);
+    }
+  }
+  #chat-bot {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  /* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #4CAF50;
+  padding: 15px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Farmers' Stories Section Styles */
+.farmers-stories {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.farmers-stories h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.story-card {
+  background-color: #a6dea6;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.story-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.story-info h3 {
+  margin: 0;
+}
+
+.story-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.story-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.story-body img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.comments {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.stat {
+  display: inline-block;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+/* Styling for Customer Reviews */
+/* Styling for Flip Cards */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  .user{
+    max-height: 400px;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .user-information{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: #000;
+}
+
+.flip-card-back {
+  background-color: #000;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 20px;
+  overflow-y: scroll;
+}
+/* Styling for Flip Cards Container */
+.customer-reviews {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px; /* Add some bottom padding to ensure the cards don't stick to the scrollbar */
+}
+
+/* Styling for Flip Cards */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin-right: 20px; /* Add some right margin between the cards */
+}
+#pricing{
+  background-color: rgb(204, 221, 204);
+}
+.intro-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send video to the background */
+}
+
+.intro-text {
+  position: relative;
+  z-index: 1;
+  color: #010000;
+  text-align: center;
+  padding: 100px 0; /* Adjust as needed */
+}
+
+.intro-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #000;
+  margin-top: 100px;
+}
+.intro-section{
+  height: 500px;
+}
+.Reviews{
+  padding-bottom: 100px;
+}
+.Reviews h1{
+  padding-left: 40%;
+}
+.statistics{
+  padding-bottom: 100px;
+}
+#stats-container{
+  background-color: rgb(91, 30, 30)
+}
+#stats-container h3 {
+  color: white;
+}
+#stats-container p{
+  color: wheat;
+}
+.requests{
+  padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
